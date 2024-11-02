@@ -2,7 +2,7 @@
 It's a shader mod, for HS2 / AIS MaterialEditor, based on [Multi-Masks.shader](https://github.com/Blatke/Multi-Masks.shader).
 
 ## How to Use
-Download the **.zipmod** file for the latest version on the [Release](https://github.com/Blatke//releases) Page, then drag and drop it into your **/mods/** folder to finish installation, or use KKManager to install this mod.
+Download the **.zipmod** file for the latest version on the [Release](https://github.com/Blatke/Multi-Mask-Shader-for-ME/releases) Page, then drag and drop it into your **/mods/** folder to finish installation, or use KKManager to install this mod.
 
 Use MaterialEditor to adjust the color and other parameters. 
 
