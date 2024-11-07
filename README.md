@@ -8,7 +8,7 @@ Use MaterialEditor to adjust the color and other parameters.
 
 ## List of Properties
 #### Mask2_ReplaceTintColor
-AlbedoMask2 can replace the colors of tint and albedo, instead of blending them, with designated colors. But this option can independently decide whether the tint color is to be replaced or blended. When the value of this option is less than 1.0, the colors indicated by AlbedoMask2 will blend with the tint color instead of replacing it, so there is only the colors on the albedo map are replaced byAlbedo Mask2.
+AlbedoMask2 can replace the colors of tint and albedo, instead of blending them, with designated colors. But this option can independently decide **whether the tint color is to be replaced or blended**. When the value of this option is less than 1.0, the colors indicated by AlbedoMask2 will blend with the tint color instead of replacing it, so there is only the colors on the albedo map are replaced byAlbedo Mask2.
 
 For instance, we add a folder in the scene with shifting its shader to Blake/Multi-Masks, and importing a texture of grid into its Albedo:
 
@@ -22,7 +22,10 @@ We assign AlbedoMask2 to a white image. Since AlbedoMask2 replaces by default th
 
 ![AI_2024-11-07-19-32-31-204](https://github.com/user-attachments/assets/01629ed1-9102-4a98-adb8-025bb7c2dc6c)
 
-Reduce the value in Mask2_ReplaceTintColor, make it less than 1.0, then you can see the folder shows Cyan color without the albedo. It's because now the white color on Mask2 are blended with the tint, that is white (1,1,1) * deep cyan (0,1,0.8214285)
+Reduce the value in Mask2_ReplaceTintColor, make it less than 1.0, then you can see the folder shows Cyan color without the albedo. It's because now the white color on Mask2 are blended with the tint, that is white (1,1,1) * deep cyan (0,1,0.8214285) = deep cyan (0,1,0.8214285). Since the albedo has been still replaced, you can't see it. 
+
+![AI_2024-11-07-19-32-39-306](https://github.com/user-attachments/assets/4bf61a83-79a1-4715-8fb3-8a50e5e09290)
+
 ## About Me
 Bl@ke
 
